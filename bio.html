@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Primary Meta Tags -->
+<title>TN 12 th mark calculator</title>
+<meta name="title" content="TN 12 th mark calculator">
+<meta name="description" content="12 th mark  calculator!
+Please select the desired 12 th group to calculate the marks.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tn-12th-mark-calc.github.io/">
+<meta property="og:title" content="TN 12 th mark calculator">
+<meta property="og:description" content="12 th mark  calculator!
+Please select the desired 12 th group to calculate the marks.">
+<meta property="og:image" content="">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://tn-12th-mark-calc.github.io/">
+<meta property="twitter:title" content="TN 12 th mark calculator">
+<meta property="twitter:description" content="12 th mark  calculator!
+Please select the desired 12 th group to calculate the marks.">
+<meta property="twitter:image" content="">
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <style>
+  
+body {
+  background:#33d9b2;
+  font-size: 12px;
+}
+
+body, button, input {
+  font-family: 'Righteous', cursive;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background: #3e3e3e;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.app-title {
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+  align-items: center;
+  color: #33d9b2;f;
+  font-size: 26px;
+  text-transform: uppercase;
+  border-left: 4px solid #218c74;
+  padding: 10px;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #FFF;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #33d9b2;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.app-form-button:hover {
+  color: #218c74;
+}
+
+.showdata{
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  padding-top: -10px;
+  padding-bottom: 10px;
+}
+
+  </style>
+</head>
+<body>
+
+<!-- Remixed by Lavan  -->
+
+
+
+<div class="background">
+  <div class="container">
+    <div class="screen">
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <div class="animated infinite pulse">
+              10 th standard <br> Mark <br> Section
+            </div>
+          </div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+			<div class="app-form-control">
+              'Please enter your marks (100 marks format)' <br>     <br>     <br>
+            </div>
+              <input type="text" class="app-form-control" placeholder="Subject 1" id="sub1">
+            </div>
+            <div class="app-form-group">
+              <input  type="text"  class="app-form-control"   placeholder="Subject 2" id="sub2">
+            </div>
+             <div class="app-form-group">
+              <input  type="text"  class="app-form-control"   placeholder="Subject 3" id="sub3">
+            </div>
+         
+            <div > 
+			<br> <br>
+              <input type="button" name="" value="   Swipe Right                     " class="app-form-button" >
+            </div>            
+          </div>
+      </div>
+
+    </div>
+      <div class="app-form-group showdata">
+              <p id="showData" >  </p>
+     </div>
+  </div>
+</div>
+
+
+<div class="background">
+
+  <div class="container">
+    <div class="screen">
+	
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <div class="animated infinite pulse">
+              11 th standard <br> Mark <br> Section
+            </div>
+          </div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+			<div class="app-form-control">
+              'Please enter your marks (90 marks format for Languages and Mathematics ,70 marks for other Core subjects)' <br>     <br>     <br>
+            </div>
+              
+<input type="text" class="app-form-control" placeholder="Language" id="sb1">
+            </div>
+            <div class="app-form-group">
+              <input  type="text"  class="app-form-control"   placeholder="English" id="sb2">
+            </div>
+             <div class="app-form-group">
+              <input  type="text"  class="app-form-control"   placeholder="Mathematics" id="sb3">
+            </div>
+         <div class="app-form-group">
+              <input  type="text"  class="app-form-control"   placeholder="Physics" id="sb4">
+            </div>
+			<div class="app-form-group">
+              
+<input  type="text"  class="app-form-control"   placeholder="Chemistry" id="sb5">
+            </div>
+			<div class="app-form-group">
+              <input  type="text"  class="app-form-control"   placeholder="Biology" id="sb6">
+            </div>
+              <div > 
+			<br> <br>
+              <input type="button" name="" value="   Swipe Right                     " class="app-form-button" >
+            </div>         
+          </div>
+      </div>
+
+    </div>
+      <div class="app-form-group showdata">
+              <p id="showData" >  </p>
+     </div>
+  </div>
+</div>
+
+<div class="background">
+  <div class="container">
+    <div class="screen">
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <div class="animated infinite pulse">
+			
+
+12 th practical / Internal Assesment <br> Section
+            </div>
+          </div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+			<div class="app-form-control">
+              'Please enter your marks<br> in  (10 for Languages and Mathematics,30 for other core subjects)' <br>     <br>     <br>
+            </div>
+              
+<input type="text" class="app-form-control" placeholder="Language" id="pr1">
+            </div>
+            <div class="app-form-group">
+              <input  type="text"  class="app-form-control"   placeholder="English" id="pr2">
+            </div>
+             <div class="app-form-group">
+              <input  type="text"  class="app-form-control"   placeholder="Mathematics" id="pr3">
+            </div>
+         <div class="app-form-group">
+              <input  type="text"  class="app-form-control"   placeholder="Physics" id="pr4">
+            </div>
+			<div class="app-form-group">
+              
+<input  type="text"  class="app-form-control"   placeholder="Chemistry" id="pr5">
+            </div>
+			<div class="app-form-group">
+              <input  type="text"  class="app-form-control"   placeholder="Biology" id="pr6">
+            </div>
+              <div > 
+			<br>   <br>
+              <input type="button" name="" value="show Mark" class="app-form-button" onclick="calcy()">
+            </div>            
+          </div>
+      </div>
+
+    </div>
+      <div class="app-form-group showdata">
+              <p id="showData" >  </p>
+     </div>
+  </div>
+</div>
+
+
+
+<script>
+  
+const calcy = () =>{
+  let sub1 = document.getElementById('sub1').value;
+  let sub2 = document.getElementById('sub2').value;
+  let sub3 = document.getElementById('sub3').value;
+  let sb1 = document.getElementById('sb1').value;
+  let sb2 = document.getElementById('sb2').value;
+  let sb3 = document.getElementById('sb3').value;
+  let sb4 = document.getElementById('sb4').value;
+  let sb5 = document.getElementById('sb5').value;
+  let sb6 = document.getElementById('sb6').value;
+  let pr1 = document.getElementById('pr1').value;
+  let pr2 = document.getElementById('pr2').value;
+  let pr3 = document.getElementById('pr3').value;
+  let pr4 = document.getElementById('pr4').value;
+  let pr5 = document.getElementById('pr5').value;
+  let pr6 = document.getElementById('pr6').value;
+  let grades = "";
+
+
+  let init1= parseFloat(sub1) + parseFloat(sub2) + parseFloat(sub3) ;
+  
+
+
+let init2= (parseFloat(sb1)/90)*20+ (parseFloat(sb2)/90)*20 + (parseFloat(sb3)/90)*20 + (parseFloat(sb4)/70)*20 + (parseFloat(sb5)/70)*20 + (parseFloat(sb6)/70)*20 ;
+
+
+let init3= (parseFloat(pr1)/10)*30 + (parseFloat(pr2)/10)*30 + (parseFloat(pr3)/10)*30 + parseFloat(pr4) + parseFloat(pr5) + parseFloat(pr6);
+  
+let totalGrades = parseFloat(init1) + parseFloat(init2) + parseFloat(init3);
+  alert(totalGrades);
+
+  let chk = 11; 
+  debugger;
+
+  
+
+  if(chk = 11){
+    document.getElementById('showData').innerHTML = ` Out of 600 your total is  ${totalGrades} `
+  }
+  
+
+  
+}
+
+
+</script>
+
+</body>
+</html>
